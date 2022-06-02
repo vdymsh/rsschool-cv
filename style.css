@@ -1,0 +1,21 @@
+h2 {
+    text-transform: uppercase;
+    color: #4542d6;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+div p {
+    font: message-box;
+}
+
+.brown {
+    color: brown;
+}
+
+#heading {
+    border: 1px solid #000;
+}
