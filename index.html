@@ -1,88 +1,31 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>CV-html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\styles\style.css">
+    <title>CV</title>
 </head>
 
 <body>
-    <h2>Vladimir Dymshakov</h2>
-
-    <hr>
-
-    <h3>About me:</h3>
-    I am self-employed. My goal is to advance in web development in order to maintain websites on my own and maybe get a
-    new job.
-    <hr>
-    <h3>Contacts:</h3>
-    <b>Location:</b> Moscow, Russia
-    <br>
-    <b>E-mail:</b> dymsh@mail.ru
-    <br>
-    <b>Discord:</b> vdymsh
-    <hr>
-    <h3>Skills:</h3>
-    <ul>
-        <li>C, C++, Python</li>
-        <li>SQL</li>
-        <li>PLC Programming (LAD, SCL)</li>
-    </ul>
-    <hr>
-    <h3>Code Example:</h3>
-    (DigitalCypher from Codewars):
-    <pre>
-    <code>
-#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
-
-class Kata
-{
-public:
-    static std::vector&lt;int&gt; Encode(std::string str, int n);
-};
-
-
-std::vector&lt;int&gt; Kata::Encode(std::string str, int n) {
-    std::vector&lt;int&gt; digits = {};
-    while (n &gt; 0) {
-        digits.push_back(n % 10);
-        n /= 10;
-    }
-    std::vector&lt;int&gt; res = {};
-    int ndx = (int)digits.size() - 1;
-    for (const auto& ch : str) {
-        res.push_back((int)ch - (int)'a' + 1 + digits[ndx]);
-        ndx = (ndx + (int)digits.size() - 1) % (int)digits.size();
-    }
-
-    return res;
-}
-</code>
-</pre>
-
-    <hr>
-
-    <h3>Pet projects:</h3>
-    <a href="https://github.com/vdymsh/MyAnki">MyAnki</a> - Pet project for customized spaced repetition (Python).
-    <hr>
-
-    <h3>Education:</h3>
-    Moscow State University (Physics department).
-    <hr>
-
-
-    <h3>Trainings:</h3>
-    MIPT certificate in algorithmic programming.
-    <hr>
-
-
-    <h3>English language proficiency:</h3>
-    A2: (Verdict of <a href="https://test.str.by">https://test.str.by</a> is "According to the results of the lexical
-    and grammatical test,
-    you are recommended the level of study Intermediate (CEFR B1)."
-
-
+    <header>
+        <div class="container">
+            <img src=".\images\vdymsh.jpg" alt="My picture">
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            
+        </div>
+    </footer>
+        
 </body>
-
 </html>

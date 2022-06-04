@@ -1,21 +1,27 @@
-h2 {
-    text-transform: uppercase;
-    color: #4542d6;
-    text-align: center;
-}
+* {
+    box-sizing: border-box;
+  }
 
-p {
-    text-align: center;
-}
+  body {
+    /* Как прижать footer к низу страницы */
+    min-height: 100vh; /* минимальная высота body не может быть меньше высоты страницы */
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Цель достигнута, footer прижат к низу страницы. */
+    font-family: Georgia, "Times New Roman", serif;
+  }
 
-div p {
-    font: message-box;
-}
+  h1,
+  h2, 
+  h3 {
+    font-family: Helvetica, Arial, sans-serif
+  }
 
-.brown {
-    color: brown;
-}
-
-#heading {
-    border: 1px solid #000;
-}
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
