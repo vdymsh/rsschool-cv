@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".\styles\style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>Vladimir Dymshakov CV</title>
 </head>
 
@@ -12,52 +14,48 @@
     <header>
         <div class="container">
             <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
-              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-              <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
-              <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-            </ul>
-          </nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
         <div class="container">
-            <section id=""person></section>
             <div class="person">
                 <div class="part">
-                <img src=".\images\vdymsh.jpg" 
-                    alt="Photo of Vladimir Dymshakov"
-                    width="200"
-                    height="200">
+                    <img src="images/vdymsh.jpg" alt="Photo of Vladimir Dymshakov" width="200" height="200">
                 </div>
                 <div class="part">
-                <p class="myname"><h1>Vladimir Dymshakov</h1></p>
+                    <div class="myname">
+                        <h1>Vladimir Dymshakov</h1>
+                    </div>
                 </div>
             </div>
 
-            <section id="about"></section>
-            <div class="caption">
+            <div class="caption" id="about">
                 <h2>About me</h2>
             </div>
-            <p>I am self-employed. My goal is to advance in web development in order to maintain websites on my own and maybe get a
+            <p>I am self-employed. My goal is to advance in web development in order to maintain websites on my own and
+                maybe get a
                 new job.</p>
 
-            <section id="contacts"></section>
-            <div class="caption">
+            <div class="caption" id="contacts">
                 <h2>Contacts</h2>
             </div>
-            <ul>    
+            <ul>
                 <li><b>Location:</b> Moscow, Russia</li>
                 <li><b>E-mail:</b> dymsh@mail.ru</li>
                 <li><b>Discord:</b> vdymsh</li>
             </ul>
 
-            <section id="skills"></section>
-            <div class="caption">
+            <div class="caption" id="skills">
                 <h2>Skills</h2>
             </div>
             <ul>
@@ -65,9 +63,8 @@
                 <li>SQL</li>
                 <li>PLC Programming (LAD, SCL)</li>
             </ul>
-            
-            <section id="code"></section>
-            <div class="caption">
+
+            <div class="caption" id="code">
                 <h2>Code example</h2>
             </div>
             (DigitalCypher from Codewars, C++):
@@ -102,51 +99,48 @@
         </code>
         </pre>
 
-        <section id="projects"></section>
-            <div class="caption">
+            <div class="caption" id="projects">
                 <h2>Projects</h2>
             </div>
-            <a href="https://github.com/vdymsh/MyAnki">MyAnki</a> - Pet project for customized spaced repetition (Python).
+            <a href="https://github.com/vdymsh/MyAnki">MyAnki</a> - Pet project for customized spaced repetition
+            (Python).
 
 
-            <section id="education"></section>
-            <div class="caption">
+            <div class="caption" id="education">
                 <h2>Education</h2>
             </div>
-            
             <h3>High school:</h3>
             Moscow State University (Physics department).
-            <hr>
+            <br><br><hr>
 
             <h3>Trainings:</h3>
             MIPT certificate in algorithmic programming.
-            <hr>
-        
+            <br><br><hr>
+
             <h3>English language proficiency:</h3>
-            A2: (Verdict of <a href="https://test.str.by">https://test.str.by</a> is "According to the results of the lexical
-            and grammatical test,
+            A2: (Verdict of <a href="https://test.str.by">https://test.str.by</a> is
+            "According to the results of the lexical and grammatical test,
             you are recommended the level of study Intermediate (CEFR B1)."
-            <hr><br><br>
+            <br><br>
         </div>
     </main>
-    
+
+    <hr><br><br>
+
     <footer>
         <div class="container">
-            <a href="https://github.com/vdymsh">
-                My GitHub
-              </a>
-              <p>2021-2022</p>
-              <a href="https://rs.school/js/">
-                <img
-                  src=".\images\rs_school_js.svg"
-                  width="86"
-                  height="32"
-                  alt="RS School"
-                />
-              </a>
-            
+            <div class="grid">
+                <a href="https://github.com/vdymsh">
+                    My GitHub
+                </a>
+                <p>Copyright 2022</p>
+                <a href="https://rs.school/js/">
+                    <img src="images/rs_school_js.svg" width="86" height="32" alt="RS School" />
+                </a>
+            </div>
         </div>
     </footer>
-        
+
 </body>
+
 </html>

@@ -54,7 +54,7 @@
   }
 
   .myname {
-    padding-top: 40px;
+    padding-top: 60px;
   }
 
   .caption {
@@ -70,13 +70,17 @@
       background-color: #aaaaaa;
   }
 
+  li {
+    margin-bottom: 1em;
+  }
+
   .grid {
+      font-size: 1.2em;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 45%);
       align-items: center;
       padding: 20px 60px 20px 60px;
-      color: white;
-      background-color: #1e232c;
+      background-color: #aaaaaa;
   }
 
 
