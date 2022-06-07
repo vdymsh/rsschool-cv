@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  h1,
+  h2, 
+  h3 {
+    font-family: Helvetica, Arial, sans-serif
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .nav {
+    background-color: #cccccc;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;   /* Убираем станартные маркеры */
+  }
+
+  .nav_item {
+    color: #000000;    
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    color: #000000;
+    font-size: 1.2em;    
+  }
+
+  .person {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .part {
+    width: 30%;
+  }
+
+  .myname {
+    padding-top: 65px;
+  }
+
+  .caption {
+      margin-top: 50px;
+      margin-bottom: 20px;
+
+      padding-left: 20px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+
+
+      color: #000000;
+      background-color: #cccccc;
+  }
+
+  li {
+    margin-bottom: 1em;
+  }
+
+  .grid {
+      font-size: 1.2em;
+      display: grid;
+      grid-template-columns: repeat(3, 45%);
+      align-items: center;
+      padding: 20px 60px 20px 60px;
+      background-color: #cccccc;
+  }
+
+
+  
