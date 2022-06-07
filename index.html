@@ -67,34 +67,28 @@
             <div class="caption" id="code">
                 <h2>Code example</h2>
             </div>
-            (DigitalCypher from Codewars, C++):
+            (String ends with... from Codewars):
             <pre>
             <code>
-        #include &lt;iostream&gt;
-        #include &lt;string&gt;
-        #include &lt;vector&gt;
-        
-        class Kata
-        {
-        public:
-            static std::vector&lt;int&gt; Encode(std::string str, int n);
-        };
-        
-        std::vector&lt;int&gt; Kata::Encode(std::string str, int n) {
-            std::vector&lt;int&gt; digits = {};
-            while (n &gt; 0) {
-                digits.push_back(n % 10);
-                n /= 10;
-            }
-            std::vector&lt;int&gt; res = {};
-            int ndx = (int)digits.size() - 1;
-            for (const auto& ch : str) {
-                res.push_back((int)ch - (int)'a' + 1 + digits[ndx]);
-                ndx = (ndx + (int)digits.size() - 1) % (int)digits.size();
-            }
-        
-            return res;
+"use strict"
+
+function solution(str, ending) {
+    let res = true;
+    let ndx = str.length - 1;
+    for (let i = ending.length - 1; i >= 0; i--) {
+        if (ending[i] != str[ndx]) {
+            res = false;
+            break;
         }
+        ndx--;
+    }
+
+    return res;
+}
+
+
+console.log(solution('abcde', 'cde'));  // true
+console.log(solution('abcde', 'abc'));  // false
         </code>
         </pre>
 

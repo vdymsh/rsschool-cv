@@ -24,7 +24,7 @@
   }
 
   .nav {
-    background-color: #aaaaaa;
+    background-color: #cccccc;
   }
 
   .nav-list {
@@ -67,7 +67,7 @@
 
 
       color: #000000;
-      background-color: #aaaaaa;
+      background-color: #cccccc;
   }
 
   li {
@@ -80,7 +80,7 @@
       grid-template-columns: repeat(3, 45%);
       align-items: center;
       padding: 20px 60px 20px 60px;
-      background-color: #aaaaaa;
+      background-color: #cccccc;
   }
 
 
