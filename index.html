@@ -1,87 +1,141 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>CV-html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Vladimir Dymshakov CV</title>
 </head>
 
 <body>
-    <h2>Vladimir Dymshakov</h2>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <hr>
+    <main>
+        <div class="container">
+            <div class="person">
+                <div class="part">
+                    <img src="images/vdymsh.jpg" alt="Photo of Vladimir Dymshakov" width="200" height="200">
+                </div>
+                <div class="part">
+                    <div class="myname">
+                        <h1>Vladimir Dymshakov</h1>
+                    </div>
+                </div>
+            </div>
 
-    <h3>About me:</h3>
-    I am self-employed. My goal is to advance in web development in order to maintain websites on my own and maybe get a
-    new job.
-    <hr>
-    <h3>Contacts:</h3>
-    <b>Location:</b> Moscow, Russia
-    <br>
-    <b>E-mail:</b> dymsh@mail.ru
-    <br>
-    <b>Discord:</b> vdymsh
-    <hr>
-    <h3>Skills:</h3>
-    <ul>
-        <li>C, C++, Python</li>
-        <li>SQL</li>
-        <li>PLC Programming (LAD, SCL)</li>
-    </ul>
-    <hr>
-    <h3>Code Example:</h3>
-    (DigitalCypher from Codewars):
-    <pre>
-    <code>
-#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
+            <div class="caption" id="about">
+                <h2>About me</h2>
+            </div>
+            <p>I am self-employed. My goal is to advance in web development in order to maintain websites on my own and
+                maybe get a
+                new job.</p>
 
-class Kata
-{
-public:
-    static std::vector&lt;int&gt; Encode(std::string str, int n);
-};
+            <div class="caption" id="contacts">
+                <h2>Contacts</h2>
+            </div>
+            <ul>
+                <li><b>Location:</b> Troitsk, Russia</li>
+                <li><b>E-mail:</b> dymsh@mail.ru</li>
+                <li><b>Discord:</b> vdymsh</li>
+            </ul>
 
+            <div class="caption" id="skills">
+                <h2>Skills</h2>
+            </div>
+            <ul>
+                <li>C, C++, Python</li>
+                <li>SQL</li>
+                <li>PLC Programming (LAD, SCL)</li>
+            </ul>
 
-std::vector&lt;int&gt; Kata::Encode(std::string str, int n) {
-    std::vector&lt;int&gt; digits = {};
-    while (n &gt; 0) {
-        digits.push_back(n % 10);
-        n /= 10;
-    }
-    std::vector&lt;int&gt; res = {};
-    int ndx = (int)digits.size() - 1;
-    for (const auto& ch : str) {
-        res.push_back((int)ch - (int)'a' + 1 + digits[ndx]);
-        ndx = (ndx + (int)digits.size() - 1) % (int)digits.size();
+            <div class="caption" id="code">
+                <h2>Code example</h2>
+            </div>
+            (String ends with... from Codewars):
+            <pre>
+            <code>
+"use strict"
+
+function solution(str, ending) {
+    let res = true;
+    let ndx = str.length - 1;
+    for (let i = ending.length - 1; i >= 0; i--) {
+        if (ending[i] != str[ndx]) {
+            res = false;
+            break;
+        }
+        ndx--;
     }
 
     return res;
 }
-</code>
-</pre>
-
-    <hr>
-
-    <h3>Pet projects:</h3>
-    <a href="https://github.com/vdymsh/MyAnki">MyAnki</a> - Pet project for customized spaced repetition (Python).
-    <hr>
-
-    <h3>Education:</h3>
-    Moscow State University (Physics department).
-    <hr>
 
 
-    <h3>Trainings:</h3>
-    MIPT certificate in algorithmic programming.
-    <hr>
+console.log(solution('abcde', 'cde'));  // true
+console.log(solution('abcde', 'abc'));  // false
+        </code>
+        </pre>
+
+            <div class="caption" id="projects">
+                <h2>Projects</h2>
+            </div>
+            <a href="https://github.com/vdymsh/MyAnki">MyAnki</a> - Pet project for customized spaced repetition
+            (Python).
 
 
-    <h3>English language proficiency:</h3>
-    A2: (Verdict of <a href="https://test.str.by">https://test.str.by</a> is "According to the results of the lexical
-    and grammatical test,
-    you are recommended the level of study Intermediate (CEFR B1)."
+            <div class="caption" id="education">
+                <h2>Education</h2>
+            </div>
+            <h3>University education:</h3>
+            Moscow State University (Physics department).
+            <br><br><hr>
 
+            <h3>Trainings:</h3>
+			<ul>
+                <li>MIPT certificate in algorithmic programming.</li>
+                <li>CSC certificate in algorithms and data structures.</li>
+            </ul>
+            <hr>
+
+            <h3>English language proficiency:</h3>
+            A2: (Verdict of <a href="https://test.str.by">https://test.str.by</a> is
+            "According to the results of the lexical and grammatical test,
+            you are recommended the level of study Intermediate (CEFR B1)."
+            <br><br>
+        </div>
+    </main>
+
+    <hr><br><br>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <a href="https://github.com/vdymsh">
+                    My GitHub
+                </a>
+                <p>Copyright 2022</p>
+                <a href="https://rs.school/js/">
+                    <img src="images/rs_school_js.svg" width="86" height="32" alt="RS School" />
+                </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
