@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 html {
@@ -8,6 +11,7 @@ html {
 
 body {
     font-family: Georgia, "Times New Roman", serif;
+    padding: 0 10px;
 }
 
 h1,
@@ -16,32 +20,42 @@ h3 {
     font-family: Helvetica, Arial, sans-serif
 }
 
-.container {
-    max-width: 1440px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2%;
-    padding-right: 2%;
+.header {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu-wrapper {
+  background-color: #cccccc;
+  width: 100%;
 }
 
 .nav {
-    background-color: #cccccc;
-    height: 80px;
+  width: min(1140px, 100%);
+  display: block;
+  margin-left: min(300px, max(0px, calc(100% - 1140px)));
+  padding: 20px 10px 25px;
 }
 
 .nav-list {
+    width: 100%;
+    padding: 0px 10px;
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding-top: 15px;
-    padding-left: 21%;
+}
+
+.nav-list li {
+  margin: 0;
 }
 
 .nav-link {
-    padding: 20px;
-    line-height: 50px;
+    flex: 0 0 16%;
     color: #000000;
     font-size: 1.2em;
 }
@@ -52,32 +66,36 @@ h3 {
 
 .person {
     display: flex;
-}
-
-.left1 {
-    width: 20%;
+    align-items: center;
     background-color: black;
-    text-align: center;
 }
 
-.left1 img {
-    width: 200px;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.person-photo {
+    flex: 0 0 20%;
+    width: min(220px, 47.8vw);
+    height: min(220px, 47.8vw);
+    padding: 10px;
+}
+
+.person-photo img {
+    width: min(200px, 43.48vw);
+    height: min(200px, 43.48vw);
     border-radius: 50%;
     border: 5px solid white;
     filter: grayscale(100%);
 }
 
-.right1 {
-    width: 80%;
-    background-color: black;
+.person-name {
+  flex: 0 1 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.right1 h1 {
+.person-name h1 {
     color: white;
-    padding-top: 15px;
+    font-size: min(40px, 7vw);
+    font-weight: 500;
 }
 
 .left2 {
