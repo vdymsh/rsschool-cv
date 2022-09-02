@@ -43,6 +43,11 @@ section {
   width: 100%;
   min-height: 70px;
   position: relative;
+  display: flex;
+}
+
+.margin {
+  flex: 0 0 260px;
 }
 
 .nav {
@@ -208,16 +213,10 @@ section {
     padding-right: 30px;
 }
 
-/* ================ Adaptive ================= */
+/* ================ Burger ================= */
 
-@media screen and (max-width: 712px) {
-  main {
-    flex-direction: column;
-  }   
+@media screen and (max-width: 940px) {
 
-  .contacts-area {
-    flex-basis: content;
-  }
   .nav {
     width: 225px;
     height: 300px;
@@ -322,6 +321,19 @@ section {
 
   .nav-cross-line:last-child {
     transform: translateY(-50%) rotate(-45deg);
+  }
+
+}
+
+/* ================ Adaptive ================= */
+
+@media screen and (max-width: 712px) {
+  main {
+    flex-direction: column;
+  }   
+
+  .contacts-area {
+    flex-basis: content;
   }
 
 }
