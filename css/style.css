@@ -18,11 +18,17 @@ body {
 h1,
 h2,
 h3 {
-    font-family: Helvetica, Arial, sans-serif
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h2 {
   font-size: 24px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 section {
@@ -53,8 +59,8 @@ section {
 .nav {
   width: min(1140px, 100%);
   display: block;
-  margin-left: min(300px, max(0px, calc(100% - 1140px)));
-  padding: 20px 10px 25px;
+  /* margin-left: min(300px, max(0px, calc(100% - 1140px))); */
+  padding: 25px 10px 25px;
 }
 
 .nav-list {
@@ -74,12 +80,14 @@ section {
 
 .nav-link {
     flex: 0 0 16%;
-    color: #000000;
-    font-size: 1.2em;
-}
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+  }
 
 .nav-link:hover {
-    color: blue;
+    color: #777;
 }
 
 .person {
@@ -128,7 +136,7 @@ section {
 .contacts-area {
   background-color: #cccccc;
   flex: 0 0 260px;
-  padding: 10px;
+  padding: 20px 10px 10px 5px;
 }
 
 .contacts-caption {
@@ -170,6 +178,10 @@ section {
 
 .code-wrapper {
   font-size: min(18px, 3.8vw);
+}
+
+pre {
+  margin-bottom: 20px;
 }
 
 .subitem {
@@ -255,7 +267,7 @@ section {
     width: 40px;
     height: 35px;
     position: absolute;
-    top: 15px;
+    top: 18px;
     right: 15px;
   }
 
