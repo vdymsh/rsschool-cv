@@ -48,6 +48,7 @@ Moscow State University (Physics department).
 ### Trainings:
 * MIPT certificate on algorithmic programming. 
 * CSC certificate in algorithms and data structures.
+* RSSchool course JS / FRONT-END STAGE 0.
 
 ### English language proficiency:
-A2: (Verdict of https://test.str.by is "According to the results of the lexical and grammatical test, you are recommended the level of study Intermediate (CEFR B1)."
+B2 - [EF Set](https://www.efset.org/cert/hh9EzM).

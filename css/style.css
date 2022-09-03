@@ -39,7 +39,7 @@ section {
 
 .header {
   display: block;
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -127,7 +127,7 @@ section {
 /* ================ Main ================= */
 
 .main {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -193,10 +193,16 @@ pre {
   margin-bottom: 10px;
 }
 
+.zero {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
 /* ================ Footer ================= */
 
 .footer {
-  max-width: 1440px;
+  max-width: 1280px;
   min-height: 60px;
   margin: 0 auto;  
   display: flex;
@@ -223,6 +229,16 @@ pre {
   flex: 0 1 33%;
   text-align: right;
     padding-right: 30px;
+}
+
+.github-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.rsschool-icon {
+  width: 70px;
+  height: 30px;
 }
 
 /* ================ Burger ================= */
