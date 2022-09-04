@@ -59,7 +59,6 @@ section {
 .nav {
   width: min(1140px, 100%);
   display: block;
-  /* margin-left: min(300px, max(0px, calc(100% - 1140px))); */
   padding: 25px 10px 25px;
 }
 
@@ -94,21 +93,25 @@ section {
     display: flex;
     align-items: center;
     background-color: black;
+    padding: 10px 10px 10px 30px;
+    column-gap: 10px;
 }
 
 .person-photo {
-    flex: 0 0 20%;
-    width: min(220px, 47.8vw);
-    height: min(220px, 47.8vw);
-    padding: 10px;
+    flex: 0 0 auto;
+    width: min(200px, 43.48vw);
+    height: min(200px, 43.48vw);
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
 }
 
 .person-photo img {
     width: min(200px, 43.48vw);
     height: min(200px, 43.48vw);
-    border-radius: 50%;
     border: 5px solid white;
     filter: grayscale(100%);
+    transform: scale(1.1) translateX(-4px) translateY(-4px);
 }
 
 .person-name {
@@ -120,7 +123,7 @@ section {
 
 .person-name h1 {
     color: white;
-    font-size: min(40px, 7.6vw);
+    font-size: min(40px, 7.2vw);
     font-weight: 500;
 }
 
@@ -244,7 +247,6 @@ pre {
 /* ================ Burger ================= */
 
 @media screen and (max-width: 940px) {
-
   .nav {
     width: 225px;
     height: 300px;
@@ -318,9 +320,6 @@ pre {
     transform: translateX(0);
   }
 
-
-/* ======================================== */
-
   .nav-cross {
     width: 20px;
     height: 20px;
@@ -360,8 +359,16 @@ pre {
     flex-direction: column;
   }   
 
+  .person {
+    padding: 10px;
+  }
+
   .contacts-area {
     flex-basis: content;
   }
+
+  .person-photo img {
+    transform: scale(1.1) translateX(-3px) translateY(-3px);
+}
 
 }
