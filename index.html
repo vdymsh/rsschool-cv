@@ -86,7 +86,7 @@ function convert(input, source, target) {
     }
     let mul = 1;
     let number = 0;
-    for (let i = input.length - 1; i >= 0; i--) {
+    for (let i = input.length - 1; i &gt;= 0; i--) {
         let ch = input[i];
         let ndx = source.indexOf(ch);
         number += ndx * mul;
@@ -95,7 +95,7 @@ function convert(input, source, target) {
 
     let result = "";
     let ndigits = target.length;
-    while (number > 0) {
+    while (number &gt; 0) {
         let rest = number % ndigits;
         result = target[rest] + result;
         number = Math.floor(number / ndigits);
@@ -156,7 +156,7 @@ function convert(input, source, target) {
 
                 <div class="footer-right">
                     <a href="https://rs.school/js/">
-                        <img src="images/rs_school_js.svg" width="86" height="32" alt="RS School" />
+                        <img src="images/rs_school_js.svg" width="86" height="32" alt="RS School">
                     </a>
                 </div>
             </div>
